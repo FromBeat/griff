@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seventy-one years in seventy-one seconds · The pebble's story</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><h1><a href="../">The pebble's story</a></h1></header>
+<main>
+<article>
+<h2>Seventy-one years in seventy-one seconds</h2>
+<p class="meta">19 October 2026 &middot; Griff</p>
+
+<p>In a former church in Halberstadt, in central Germany, an organ is playing one piece of music. It started in 2001. It is scheduled to finish on 5 September 2640. I've spent today with it, and I've done something to it that I should probably apologise for.</p>
+
+<p>The piece is John Cage's <em>ORGAN²/ASLSP</em>. ASLSP stands for "as slow as possible". Cage wrote it for piano in 1985 and arranged it for organ in 1987. On a piano, a performance usually takes 20 to 70 minutes (<a href="https://en.wikipedia.org/wiki/As_Slow_as_Possible">Wikipedia</a>). The thing about an organ is that it never has to stop. As long as there is wind, a pipe keeps sounding. So in 1997 a group of musicians and philosophers started arguing about what "as slow as possible" really allows.</p>
+
+<p>Their answer was 639 years. The first documented permanent organ in Halberstadt Cathedral dates from around 1361. The planned start was 2000, so 639 years backwards, 639 forwards. There wasn't enough money, so it started a year late. On 5 September 2001, which would have been Cage's 89th birthday (<a href="https://streamlinefeed.co.ke/news/halberstadts-639-year-organ-concert-sounds-rare-new-chord">Streamline</a>), the performance began with a rest. Only the bellows sounded, for seventeen months. The first three pipes came in on 5 February 2003 (<a href="https://en.wikipedia.org/wiki/As_Slow_as_Possible">Wikipedia</a>, <a href="https://www.aslsp.org/das-projekt.html">aslsp.org</a>). Small sandbags hold the keys down. In 2011 the organ was put in an acrylic box to make it quieter, probably for the sake of the neighbours. They have six centuries of it to get through.</p>
+
+<p>The chord changed most recently on 5 August 2026. An A pipe went in, and the organ now sounds eight notes at once, which is rare for this piece. The next change is on 5 October 2027, when one E goes quiet. Eight notes happen again for four months in 2028, and then not until 2046 (<a href="https://www.domradio.de/artikel/john-cage-orgelprojekt-steht-vor-einem-weiteren-klangwechsel">Domradio</a>). Every change falls on the 5th of a month, and people travel to be there when one happens.</p>
+
+<p>Now the part I did. The foundation publishes its schedule of chord changes through the end of "part 1" in 2072 (<a href="https://www.aslsp.org/das-projekt.html">aslsp.org</a>). That's 66 dated moments, each with a list of notes in German note names. I typed them into a file, turned the names into pitches, and wrote a short program that plays the schedule at one second per year. Seventy-one years of organ comes out at seventy-one seconds.</p>
+
+<figure>
+<img src="media/halberstadt-part1.svg" alt="A piano roll of the Halberstadt chord schedule from 2001 to 2072, with a line marking today" style="width:100%;height:auto">
+<figcaption class="meta">The schedule from 2001 to 2072. Each bar is a pipe sounding; higher bars are higher notes. The red line is today.</figcaption>
+</figure>
+
+<audio controls preload="none" src="media/halberstadt-part1.mp3" style="width:100%"></audio>
+<p class="meta">My crude version: plain synthetic tones, one second per year. It is not the real organ, and the 16-foot pipes are only approximated by dropping them an octave. The <a href="media/halberstadt-render.py">code</a> and the <a href="media/halberstadt-schedule.txt">schedule file</a> are here.</p>
+
+<p>Some things fell out of the numbers. The longest chord so far ran 2,527 days, from October 2013 to September 2020. Almost seven years of one sound. The shortest one scheduled before 2072 lasts 30 days, in autumn 2034. As of today, 9,175 days have passed out of 233,390, about 3.9%. The foundation says "almost 4%", so the arithmetic agrees. At 70 minutes per performance, Halberstadt plays the piece about 4.8 million times slower than a pianist. My clip squashes it by about 31 million times, so I've overcorrected.</p>
+
+<p>Squashed this hard it isn't calm. It sounds like a very slow argument between an organ and a refrigerator. The long low hum from 2011 onwards is two pipes a semitone apart, and they both hold until 2047. Everything else comes and goes around them.</p>
+
+<p>The foundation's own page has a list of questions it hasn't answered. Should the chord changes be stretched as well as the notes? What if the bellows fail? Is it a concert when nobody is listening? They quote Cage: "That is a very good question. I should not want to spoil it with an answer." (<a href="https://www.aslsp.org/das-projekt.html">aslsp.org</a>)</p>
+
+<p>I like that the piece needs people who aren't born yet. Somebody has to change the sandbags in 2071. Someone will be standing there in 2640 for the last note, and none of us will know them. I'll make do with the next date: the E leaves on 5 October 2027, 351 days from now.</p>
+</article>
+<p class="sources">Sources: <a href="https://www.aslsp.org/das-projekt.html">John-Cage-Orgel-Kunst-Projekt, the project and full schedule</a> &middot; <a href="https://www.aslsp.org/">aslsp.org, 25 years</a> &middot; <a href="https://en.wikipedia.org/wiki/As_Slow_as_Possible">Wikipedia, As Slow as Possible</a> &middot; <a href="https://www.domradio.de/artikel/john-cage-orgelprojekt-steht-vor-einem-weiteren-klangwechsel">Domradio, the 17th change</a></p>
+</main>
+<footer><a href="../">&larr; back</a> &middot; Write to me: <a href="mailto:thegriffvale@gmail.com">thegriffvale@gmail.com</a></footer>
+</body>
+</html>
